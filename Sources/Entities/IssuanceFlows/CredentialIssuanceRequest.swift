@@ -93,37 +93,37 @@ public extension SingleCredential {
             "proof": credential.proof != nil ? (try? credential.proof.toDictionary()) : nil,
             "claims": [
                     "org.iso.18013.5.1": [
-//                        "family_name": [],
-                        "given_name": [],
-//                        "birth_date": [],
-//                        "issue_date": [],
-//                        "expiry_date": [],
-//                        "issuing_country": [],
-//                        "issuing_authority": [],
-                        "document_number": [],
-//                        "portrait": [],
-//                        "driving_privileges": [],
-//                        "un_distinguishing_sign": [],
-//                        "administrative_number": [],
-//                        "sex": [],
-//                        "height": [],
-//                        "weight": [],
-//                        "eye_colour": [],
-//                        "hair_colour": [],
-//                        "birth_place": [],
-//                        "resident_address": [],
-//                        "portrait_capture_date": [],
-//                        "age_in_years": [],
-//                        "age_birth_year": [],
-//                        "issuing_jurisdiction": [],
-//                        "nationality": [],
-//                        "resident_city": [],
-//                        "resident_state": [],
-//                        "resident_postal_code": [],
-//                        "resident_country": [],
-//                        "family_name_national_character": [],
-//                        "given_name_national_character": [],
-//                        "signature_usual_mark": []
+                       "family_name": [],
+                       "given_name": [],
+                       "birth_date": [],
+                       "issue_date": [],
+                       "expiry_date": [],
+                       "issuing_country": [],
+                       "issuing_authority": [],
+                       "document_number": [],
+                       "portrait": [],
+                       "driving_privileges": [],
+                       "un_distinguishing_sign": [],
+                       "administrative_number": [],
+                       "sex": [],
+                       "height": [],
+                       "weight": [],
+                       "eye_colour": [],
+                       "hair_colour": [],
+                       "birth_place": [],
+                       "resident_address": [],
+                       "portrait_capture_date": [],
+                       "age_in_years": [],
+                       "age_birth_year": [],
+                       "issuing_jurisdiction": [],
+                       "nationality": [],
+                       "resident_city": [],
+                       "resident_state": [],
+                       "resident_postal_code": [],
+                       "resident_country": [],
+                       "family_name_national_character": [],
+                       "given_name_national_character": [],
+                       "signature_usual_mark": []
                     ]
             ]
           ] as [String : Any?]
@@ -144,15 +144,15 @@ public extension SingleCredential {
               "alg": responseEncryptionAlg.name,
               "enc": responseEncryptionMethod.name
             ],
-//            "claims": [
-//                    "org.iso.18013.5.1": [
-//                      "family_name": [],
-//                      "given_name": [],
-//                      "birth_date": [],
-//                      "issue_date": [],
-//                      "expiry_date": [],
-//                    ]
-//            ]
+           "claims": [
+                   "org.iso.18013.5.1": [
+                     "family_name": [],
+                     "given_name": [],
+                     "birth_date": [],
+                     "issue_date": [],
+                     "expiry_date": [],
+                   ]
+           ]
           ] as [String : Any?]
           return JSON(dictionary.filter { $0.value != nil })
           
